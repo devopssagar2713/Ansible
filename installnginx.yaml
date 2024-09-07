@@ -1,6 +1,6 @@
 -name: Install Nginx software
-  hosts: web
-  tasks: #installing the nginx software
+ hosts: web
+ tasks: #installing the nginx software
     -name: Install the Nginx software
      ansible.builtin.package:
       name: nginx
