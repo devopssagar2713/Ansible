@@ -1,14 +1,14 @@
--name: Install Nginx software
+-name: nginx install and run
  hosts: web
- tasks: #installing the nginx software
-    -name: Install the Nginx software
-     ansible.builtin.package:
+ become: yes
+ tasks: 
+  - name: nginx install
+    ansible.builtin.package:
       name: nginx
       state: present
-
-    -name: enable the nginx service
+   
+  - name: run nginx and enable
     ansible.builtin.service:
       name: nginx
       state: started
       enabled: yes
-
