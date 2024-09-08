@@ -1,0 +1,15 @@
+- name: Variables implementation
+  hosts: local
+  connection: local
+  vars:
+   h: "he"
+   i: 10
+   list: 
+    - apple
+    - mango
+    - banana
+  tasks: 
+    - name: print all the variables
+      ansible.builtin.debug
+      msg: "{{h}} is {{i}} years old and he likes the fruits {{list}}"
+      
