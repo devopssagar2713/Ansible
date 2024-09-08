@@ -1,0 +1,10 @@
+- name: EC2 instance termination
+  hosts: local
+  connection: local
+  tasks:
+  - name: terminate an instance with an instance id
+    amazon.aws.ec2_instance:
+      name: "public-compute-instance"
+      instance_ids: i-0038ee1d9f3cdcc12
+      state: 'absent'
+      region: us-east-1
