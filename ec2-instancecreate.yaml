@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: start an instance with a public IP address
-      amazon.aws.ec2_instance:
+    amazon.aws.ec2_instance:
       name: "public-compute-instance"
       vpc_subnet_id: subnet-0376be834be6f3982
       instance_type: t3.micro
