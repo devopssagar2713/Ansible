@@ -11,4 +11,4 @@
   tasks: 
     - name: print all the variables
       ansible.builtin.debug
-       msg: "{{h}} is {{i}} years old and he likes the fruits {{list}}"
+       msg: "{{h}}"" is "{{i}}" years old and he likes the fruits "{{list}}"
