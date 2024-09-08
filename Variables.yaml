@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-   h: "he"
+   h: he
    i: 10
    list: 
     - apple
