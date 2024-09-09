@@ -1,6 +1,7 @@
 - name: collecting logs 
   hosts: local
   connection: local
+  become: yes
   tasks:
     - name: create a file
       ansible.builtin.command: touch /tmp/sagar.txt
