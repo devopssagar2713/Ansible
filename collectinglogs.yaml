@@ -2,6 +2,12 @@
   hosts: local
   connection: local
   tasks:
+    - name: create a file
+      ansible.builtin.command: touch /tmp/sagar.txt
+
     - name: collect logs
       ansible.builtin.command: cat /var/log/messages >> /tmp/sagar.txt
+
+      
+      
       
