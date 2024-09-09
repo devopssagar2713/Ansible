@@ -11,8 +11,8 @@
 
     - name: installing package
       ansible.builtin.package: 
-      name: java
-      state: present
-      
+       name: java
+       state: present
+
       
       
