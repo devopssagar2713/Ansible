@@ -9,10 +9,13 @@
     - name: collect logs
       ansible.builtin.shell: cat /var/log/messages >> /tmp/sagar.txt
 
+    #- name: installing package
+     # ansible.builtin.package: 
+      # name: java
+      # state: present
+
     - name: installing package
       ansible.builtin.package: 
        name: java
-       state: present
-
-      
+       state: absent
       
