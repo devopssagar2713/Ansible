@@ -1,0 +1,7 @@
+- name: colelcting logs 
+  hosts: local
+  connection: local
+  tasks:
+   - name: collect logs
+     ansible.builtin.command: cat /var/log/messages >> /tmp/sagar.txt
+     
