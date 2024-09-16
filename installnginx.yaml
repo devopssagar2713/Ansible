@@ -4,7 +4,7 @@
   tasks: 
    - name: nginx install
      ansible.builtin.package:
-       name: nginx
+       name: java
        state: present
    
    - name: run nginx and enable
