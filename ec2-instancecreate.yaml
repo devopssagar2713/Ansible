@@ -1,6 +1,6 @@
 - name: EC2 instance creation
   hosts: local
-  connection: local
+  connection: localhost
   tasks:
   - name: start an instance with a public IP address
     amazon.aws.ec2_instance:
