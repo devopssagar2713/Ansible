@@ -14,7 +14,7 @@
       # name: java
       # state: present
 
-    - name: installing package
+    - name: uninstalling package
       ansible.builtin.package: 
        name: java
        state: absent

@@ -9,4 +9,5 @@
       instance_type: t3.micro
       security_group: sg-0e5594f3e1a035cf3
       image_id: ami-09c813fb71547fc4f
+      count: 1
     

@@ -1,0 +1,12 @@
+- name: EC2 instance creation
+  hosts: local
+  connection: local
+  tasks:
+  - name: creat and start instances with a public IP address
+    amazon.aws.ec2_instance:
+      name: "public-compute-instance"
+      vpc_subnet_id: subnet-0376be834be6f3982
+      instance_type: t3.micro
+      security_group: sg-0e5594f3e1a035cf3
+      image_id: ami-09c813fb71547fc4f
+      
